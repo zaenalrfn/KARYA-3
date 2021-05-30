@@ -1,0 +1,300 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/* bagian navbar*/
+nav .btn {
+	border-radius: 10%;
+	padding: 2px 10px;
+	margin-top: 5px;
+	background-color: #FF6600;
+}
+/* bagian problem*/
+#problem {
+	width: 100%;
+	background-image: linear-gradient(to right,white 40%,#660099 20%)
+}
+.M {
+	display: flex;
+	justify-content: space-around;
+	margin: 57px 30px;
+
+}
+.M .M_2 {
+	margin-top: 150px;
+	color: white;
+}
+.M .M_2 h1 {
+	font-weight: 600;
+}
+/* bagian service*/ 
+#service {
+	margin-top: 130px;
+	margin-bottom: 70px;
+}
+#service .card {
+	text-align: center;
+}
+/* bagian testimoni*/
+#testimoni {
+ 	min-height: 90vh;
+  	display: flex;
+  	align-items: center;
+}
+.wrapper{
+  	width: 100%;
+}
+.carousel{
+	  max-width: 1200px;
+	  margin: auto;
+	  padding: 0 30px;
+}
+.carousel .card{
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+  border-radius: 10px;
+  border: 1px solid grey;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2)
+}
+.carousel .card .T img {
+	width: 110px;
+	margin: 0 auto;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+.carousel .card-1{
+  background: #fafafa;
+}
+.carousel .card-2{
+  background: #fafafa;
+}
+.carousel .card-3{
+  background: #fafafa;
+}
+.carousel .card-4{
+  background: #fafafa;
+}
+.carousel .card-5{
+  background:#fafafa;
+}
+.owl-dots{
+  text-align: center;
+  margin-top: 40px;
+}
+.owl-dot{
+  height: 15px;
+  width: 45px;
+  margin: 0 5px;
+  outline: none;
+  border-radius: 14px;
+  border: 2px solid #660099!important;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+.owl-dot.active,
+.owl-dot:hover{
+  background: #660099!important;
+}
+/* bagian about*/
+#about {
+	width: 100%;
+	background-color: #660099;
+	margin-top: 2rem;
+}
+#about .A {
+	display: flex;
+	justify-content:space-evenly;
+	text-align: center;
+	overflow: hidden;
+}
+#about .A .A_1 img {
+	transform: rotate(15deg);
+	animation: anima 2s linear infinite;
+}
+@keyframes anima {
+ 	0%,100% {
+ 		transform: translateY(15px);
+ 	}
+ 	50% {
+ 		transform: translateY(25px);
+ 	}
+ 	
+}
+#about .A h2 {
+	font-weight: 600;
+}
+#about .A h2::before {
+	content: '';
+	position: absolute;
+	margin-top: 37px;
+	width: 100px;
+	height: 2px;
+	background-color: #FF6600;
+}
+#about .A .A_2 {
+	margin-top: 3rem;
+	color: #fff;
+	width: 40%;
+}
+/* bagian faq*/
+/* bagian Call*/
+#Call {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+#Call .C {
+	display: flex;
+	justify-content: space-evenly;
+}
+#Call .C .C_1 {
+	margin-top: 2rem;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 90px;
+}
+#Call .C .C_2 img {
+	animation: gerak 4s linear infinite;
+}
+.C h5 {
+	font-size: 17px;
+	color: #fff;
+}
+.C .C_1 h2 {
+	font-size: 25px;
+	font-weight: 600;
+	color: #fff;
+}
+.C .C_1 h2::before {
+	content: '';
+	position: absolute;
+	margin-top: 32px;
+	width: 50px;
+	height: 2px;
+	background-color: red;
+}
+.C .C_1 .kontak h5 {
+	padding-bottom: 5px;
+}
+.C .C_1 .kontak h5:hover {
+	color: red;
+}
+.C .C_1 .adress h5:hover {
+	color: red;
+}
+@keyframes gerak{
+	0% {
+		transform: translateX(50px);
+	}
+	50% {
+		transform: translateX(-5px);
+	}
+	100% {
+		transform: translateX(50px);
+	}
+}
+/* bagian footer*/
+footer {
+	width: 100%;
+	height: 49px;
+	text-align: center;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding-bottom: 10px;
+}
+footer p {
+	padding-top: 8px;
+}
+footer span {
+	color: red;
+	font-weight: 700;
+}
+/* responsive*/
+@media screen and (max-width: 1120px) {
+	#problem {
+		width: 100%;
+		background-image: linear-gradient(to right,white 45%,#660099 20%)
+	}
+}
+@media screen and (max-width: 974px) {
+	#problem {
+		width: 100%;
+		background-image: linear-gradient(to right,white 50%,#660099 20%)
+	}
+	#about .A h2::after {
+		display: none;
+	}
+	#Call .C .C_1 {
+		display: grid;
+		grid-template-columns: auto;
+	}
+	.kontak {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 802px) {
+	.M {
+		display: block;
+	}
+	#problem .M .M_2 {
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+	#problem .M .M_1 {
+		margin: 0 auto;
+	}
+	#problem {
+		width: 100%;
+		background-image: linear-gradient(to bottom,white 60%,#660099 20%)
+	}
+	#about .A {
+		display: block;
+	}
+	#about .A .A_2 {
+		margin: 0 auto;
+		width: 90%;
+	}
+	#about .A .A_1 img {
+		transform: rotate(0);
+	}
+}
+@media screen and (max-width: 567px) {
+	.M .M_1 img {
+		width: 320px;
+	}
+	.M .M_2 {
+		margin-top: 70px;
+		padding-bottom: 20px;
+	}
+	#service .card {
+		width: 230px;
+		margin: 0 auto;
+	}
+	#testimoni {
+		margin-top: 2rem;
+	}
+	.owl-dots {
+		text-align: left;
+		margin-left: 30px;
+	}
+	#about .A h2::after {
+		display: none;
+	}
+	#testimoni {
+		min-height: 60vh;
+	}
+	#faq {
+		margin-top: 8rem;
+	}
+	#Call .C {
+		display: block;
+		padding-top: 20px;
+		margin: 0 10px;
+	}
+	#Call {
+		margin: 0 auto;
+	}
+	#Call .C .C_1 {
+		grid-gap: 40px;
+	}
+}
